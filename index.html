@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinjaman Dana Jaminan BPKB Mobil BFI Finance | Proses Cepat & Bunga Rendah</title>
+    <meta name="description" content="Solusi pinjaman jaminan BPKB Mobil resmi BFI Finance. Bunga ringan, pencairan tinggi hingga 85%, mobil tetap digunakan. Daftar sekarang!">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="bpkbkilat-favicon-512.png">
+    <link rel="apple-touch-icon" href="bpkbkilat-favicon-512.png">
+
+    <!-- Tailwind CSS (CDN Ringan & Cepat) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0B0F17; /* Deep Charcoal Dark */
+            color: #E2E8F0;
+        }
+        .card-dark {
+            background-color: #161F30;
+            border: 1px solid #223049;
+        }
+        .input-dark {
+            background-color: #0F172A;
+            border: 1px solid #334155;
+            color: #FFFFFF;
+        }
+        .input-dark:focus {
+            border-color: #38BDF8;
+            outline: none;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+
+    <!-- GOOGLE ADS TRACKING PLACEHOLDER -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-XXXXXXXXX');
+    </script>
+    -->
+</head>
+<body class="antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- TOP BAR / HEADER -->
+    <header class="border-b border-slate-800/80 bg-slate-950/70 backdrop-blur sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 py-3 sm:py-3.5 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="bpkbkilat-logo-web.png" alt="BPKB Kilat" class="h-11 sm:h-13 w-auto object-contain">
+            </div>
+            <div>
+                <a href="https://wa.me/6281234567890?text=Halo%20Agen%20BFI,%20saya%20ingin%20konsultasi%20pinjaman%20BPKB%20Mobil" 
+                   target="_blank" 
+                   class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-sm px-4 py-2 rounded-lg transition shadow-lg shadow-emerald-950">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">Hubungi Agen</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-10 pb-16 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Sisi Kiri: Headline & Value Proposition -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-950/70 border border-sky-800 text-sky-400 text-xs font-semibold mb-4">
+                        <i class="fas fa-shield-alt"></i> Mitra Resmi BFI Finance • Berizin & Diawasi OJK
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight mb-4">
+                        Pencairan Dana Cepat Jaminan <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500">BPKB Mobil</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-base sm:text-lg mb-6 leading-relaxed">
+                        Solusi dana tunai kebutuhan bisnis & mendesak. Dapatkan plafon hingga <strong>85% nilai mobil</strong>, bunga bersaing mulai <strong>0.6%*</strong>, dan mobil tetap bebas Anda gunakan.
+                    </p>
+
+                    <!-- Poin Kepercayaan Cepat -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8 text-left">
+                        <div class="flex items-center gap-2 text-sm text-slate-300">
+                            <i class="fas fa-check-circle text-sky-400"></i> Proses 1-2 Hari
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-slate-300">
+                            <i class="fas fa-check-circle text-sky-400"></i> Pajak Mati Dibantu
+                        </div>
+                        <div class="flex items-center gap-2 text-sm text-slate-300">
+                            <i class="fas fa-check-circle text-sky-400"></i> Tenor s/d 48 Bulan
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sisi Kanan: Lead Form (Kunci Konversi Google Ads) -->
+                <div class="lg:col-span-5" id="form-area">
+                    <div class="card-dark rounded-2xl p-6 sm:p-8 shadow-2xl relative">
+                        <div class="text-center mb-5">
+                            <h2 class="text-xl font-bold text-white">Ajukan Simulasi Gratis</h2>
+                            <p class="text-xs text-slate-400">Cek taksasi & estimasi pencairan dalam hitungan menit</p>
+                        </div>
+
+                        <form id="leadForm" onsubmit="submitFormToWhatsApp(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Nama Lengkap</label>
+                                <input type="text" id="nama" required placeholder="Contoh: Budi Santoso" class="w-full input-dark rounded-lg px-3 py-2.5 text-sm focus:ring-1 focus:ring-sky-400">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Nomor WhatsApp Aktif</label>
+                                <input type="tel" id="nomorWA" required placeholder="Contoh: 081234567890" class="w-full input-dark rounded-lg px-3 py-2.5 text-sm focus:ring-1 focus:ring-sky-400">
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-3">
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-1">Merk & Tipe Mobil</label>
+                                    <input type="text" id="merkMobil" required placeholder="Avanza / Innova" class="w-full input-dark rounded-lg px-3 py-2.5 text-sm focus:ring-1 focus:ring-sky-400">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-1">Tahun Mobil</label>
+                                    <input type="number" id="tahunMobil" min="2010" max="2026" required placeholder="Contoh: 2018" class="w-full input-dark rounded-lg px-3 py-2.5 text-sm focus:ring-1 focus:ring-sky-400">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Nomor Plat Polisi</label>
+                                <input type="text" id="nomorPlat" required placeholder="Contoh: B 1234 ABC" class="w-full input-dark rounded-lg px-3 py-2.5 text-sm uppercase focus:ring-1 focus:ring-sky-400">
+                            </div>
+
+                            <!-- Keterangan Keamanan & Privasi Data -->
+                            <div class="flex items-start gap-2 bg-slate-900/90 border border-slate-800 rounded-lg p-2.5 text-[11px] text-slate-400">
+                                <i class="fas fa-lock text-sky-400 mt-0.5"></i>
+                                <span>Semua data yang Anda masukkan bersifat rahasia dan hanya digunakan untuk keperluan pengajuan resmi di BFI Finance.</span>
+                            </div>
+
+                            <button type="submit" class="w-full py-3 px-4 bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 font-bold rounded-lg shadow-lg hover:shadow-yellow-500/20 transition flex justify-center items-center gap-2 text-sm uppercase tracking-wide">
+                                <span>Hitung Estimasi Saya</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF & BADGES -->
+    <section class="py-6 border-y border-slate-800 bg-slate-950/40">
+        <div class="max-w-6xl mx-auto px-4 flex flex-wrap items-center justify-around gap-6 text-center text-slate-400 text-xs sm:text-sm font-medium">
+            <div><i class="fas fa-shield-alt text-sky-400 mr-2 text-base"></i>Terdaftar & Diawasi OJK</div>
+            <div><i class="fas fa-building text-sky-400 mr-2 text-base"></i>Jaringan Cabang Seluruh Indonesia</div>
+            <div><i class="fas fa-lock text-sky-400 mr-2 text-base"></i>BPKB Aman Tersimpan di Vault</div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN / KENAPA PILIH KAMI -->
+    <section class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Kenapa Ajukan Lewat Agen Kami?</h2>
+                <p class="text-slate-400 text-sm">Kemudahan pencairan dana tanpa ribet dengan pendampingan langsung sampai tuntas.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-dark p-6 rounded-xl hover:border-slate-600 transition">
+                    <div class="w-12 h-12 bg-sky-950 border border-sky-800 rounded-lg flex items-center justify-center text-sky-400 mb-4 text-xl">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2 text-base">Mobil Tetap Digunakan</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Hanya dokumen BPKB yang dijaminkan. Unit kendaraan tetap bersama Anda untuk bekerja dan beraktivitas.</p>
+                </div>
+
+                <div class="card-dark p-6 rounded-xl hover:border-slate-600 transition">
+                    <div class="w-12 h-12 bg-sky-950 border border-sky-800 rounded-lg flex items-center justify-center text-sky-400 mb-4 text-xl">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2 text-base">Bunga Sangat Bersaing</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Suku bunga ringan dan perhitungan cicilan transparan tanpa ada biaya potongan siluman.</p>
+                </div>
+
+                <div class="card-dark p-6 rounded-xl hover:border-slate-600 transition">
+                    <div class="w-12 h-12 bg-sky-950 border border-sky-800 rounded-lg flex items-center justify-center text-sky-400 mb-4 text-xl">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2 text-base">Pajak Mati Bisa Dibantu</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">STNK terlambat atau pajak mati? Jangan khawatir, tim kami siap memberikan solusi terbaik.</p>
+                </div>
+
+                <div class="card-dark p-6 rounded-xl hover:border-slate-600 transition">
+                    <div class="w-12 h-12 bg-sky-950 border border-sky-800 rounded-lg flex items-center justify-center text-sky-400 mb-4 text-xl">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="font-bold text-white mb-2 text-base">Full Pendampingan</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">Agen mendampingi langsung dari proses persiapan berkas, cek fisik, hingga dana cair ke rekening.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: ALUR PENGAJUAN PINJAMAN -->
+    <section class="py-16 bg-slate-900/60 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-sky-400 font-semibold text-xs tracking-wider uppercase mb-2 block">Proses Mudah & Transparan</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-3">4 Langkah Pengajuan Dana Praktis</h2>
+                <p class="text-slate-400 text-sm">Tidak perlu antre lama di kantor cabang. Semua tahapan kami bantu koordinasikan hingga dana masuk ke rekening Anda.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+                
+                <!-- Step 1 -->
+                <div class="card-dark p-6 rounded-2xl relative border-t-2 border-t-sky-500 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-9 h-9 rounded-full bg-sky-500/20 text-sky-400 font-extrabold flex items-center justify-center text-sm border border-sky-500/40">01</span>
+                            <i class="fas fa-file-invoice text-slate-500 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-base mb-2">Konsultasi / Isi Data</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Kirimkan data mobil (merk, tahun & plat nomor) via formulir website atau chat WhatsApp.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800/80 text-[11px] text-sky-400 font-medium">
+                        ⏱ Waktu: 5 - 10 Menit
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="card-dark p-6 rounded-2xl relative border-t-2 border-t-sky-500 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-9 h-9 rounded-full bg-sky-500/20 text-sky-400 font-extrabold flex items-center justify-center text-sm border border-sky-500/40">02</span>
+                            <i class="fas fa-calculator text-slate-500 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-base mb-2">Perhitungan Plafon</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Agen kami menghitung estimasi maksimal nilai taksasi mobil, angsuran bulanan, dan tenor terbaik untuk Anda.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800/80 text-[11px] text-sky-400 font-medium">
+                        ⏱ Waktu: Transparan & Bebas Biaya
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="card-dark p-6 rounded-2xl relative border-t-2 border-t-sky-500 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-9 h-9 rounded-full bg-sky-500/20 text-sky-400 font-extrabold flex items-center justify-center text-sm border border-sky-500/40">03</span>
+                            <i class="fas fa-car-crash text-slate-500 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-base mb-2">Cek Fisik Kendaraan</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Pemeriksaan fisik nomor rangka & mesin mobil serta verifikasi berkas dokumen oleh tim resmi.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800/80 text-[11px] text-sky-400 font-medium">
+                        ⏱ Waktu: Janji Temu Fleksibel
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="card-dark p-6 rounded-2xl relative border-t-2 border-t-amber-400 flex flex-col justify-between shadow-lg shadow-amber-950/20">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="w-9 h-9 rounded-full bg-amber-500/20 text-amber-400 font-extrabold flex items-center justify-center text-sm border border-amber-500/40">04</span>
+                            <i class="fas fa-money-bill-wave text-amber-400 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-base mb-2">Dana Cair ke Rekening</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed">Setelah disetujui, dana langsung ditransfer utuh ke rekening bank pribadi Anda tanpa potongan liar.</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800/80 text-[11px] text-amber-400 font-medium">
+                        ⏱ Waktu: 1 - 2 Hari Kerja
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Ajakan Tindakan Bawah Alur -->
+            <div class="mt-12 text-center">
+                <a href="#form-area" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-sky-400 border border-slate-700 px-6 py-3 rounded-xl font-semibold text-sm transition">
+                    <span>Mulai Pengajuan Langkah 1 Sekarang</span>
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: PERAN & KEUNGGULAN PENDAMPINGAN AGEN (100% GRATIS) -->
+    <section class="py-16 bg-gradient-to-b from-slate-900/90 to-slate-950 border-t border-slate-800">
+        <div class="max-w-5xl mx-auto px-4">
+            <!-- Badge & Header -->
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-3">
+                    <i class="fas fa-shield-alt"></i> Layanan Agen Resmi 100% Gratis
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">
+                    Pendampingan Penuh dari Awal Hingga Dana Cair
+                </h2>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                    Anda tidak perlu bingung mengurus persyaratan sendiri. Seluruh bantuan konsultasi dan proses pengajuan lewat kami <strong class="text-emerald-400">sama sekali tidak dipungut biaya (tanpa biaya perantara / tanpa uang muka)</strong>.
+                </p>
+            </div>
+
+            <!-- Grid 3 Pilar Tugas Agen -->
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <!-- Pilar 1: Mendampingi -->
+                <div class="card-dark p-6 sm:p-7 rounded-2xl border border-slate-800 hover:border-sky-500/50 transition relative group">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/30 text-sky-400 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition">
+                        <i class="fas fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">1. Mendampingi</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Kami memandu Anda langkah demi langkah, mulai dari pengecekan kelengkapan berkas, koordinasi survei cek fisik kendaraan yang fleksibel, hingga pencocokan unit agar tidak menyita waktu berharga Anda.
+                    </p>
+                </div>
+
+                <!-- Pilar 2: Memberi Solusi -->
+                <div class="card-dark p-6 sm:p-7 rounded-2xl border border-slate-800 hover:border-sky-500/50 transition relative group">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/30 text-sky-400 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">2. Memberi Solusi</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Pajak STNK mati, plat mobil luar daerah, atau BPKB belum balik nama? Jangan mundur dulu. Kami bantu cari skema dan opsi pembiayaan resmi yang paling pas dan realistis sesuai profil Anda.
+                    </p>
+                </div>
+
+                <!-- Pilar 3: Memastikan Cair (Ikon SVG Centang Terjamin) -->
+                <div class="card-dark p-6 sm:p-7 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition relative group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-emerald-400 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">3. Memastikan Cair</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed">
+                        Tugas kami baru selesai saat dana pinjaman sudah masuk aman ke rekening bank Anda. Tidak ada potongan terselubung, tidak ada pungutan liar, pencairan langsung ditransfer 100% oleh BFI Finance.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Callout Garansi Gratis & CTA -->
+            <div class="mt-8 p-5 rounded-xl bg-slate-950/80 border border-emerald-500/30 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg shrink-0">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <div class="text-white text-sm font-bold">Komitmen Transparansi Agen</div>
+                        <div class="text-slate-400 text-xs">Semua layanan pendampingan kami bebas biaya administrasi perantara. 100% Gratis!</div>
+                    </div>
+                </div>
+                <a href="#form-area" class="w-full sm:w-auto px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-lg transition whitespace-nowrap text-center shadow-lg shadow-emerald-950">
+                    Konsultasi Gratis Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SYARAT DOKUMEN CEPAT -->
+    <section class="py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Persyaratan Mudah & Praktis</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
+                <div class="bg-slate-900 p-4 rounded-lg border border-slate-800 text-center">
+                    <i class="fas fa-id-card text-sky-400 text-2xl mb-2"></i>
+                    <p class="text-xs font-semibold text-slate-200">KTP & Kartu Keluarga</p>
+                </div>
+                <div class="bg-slate-900 p-4 rounded-lg border border-slate-800 text-center">
+                    <i class="fas fa-car-side text-sky-400 text-2xl mb-2"></i>
+                    <p class="text-xs font-semibold text-slate-200">STNK & BPKB Asli</p>
+                </div>
+                <div class="bg-slate-900 p-4 rounded-lg border border-slate-800 text-center">
+                    <i class="fas fa-file-invoice-dollar text-sky-400 text-2xl mb-2"></i>
+                    <p class="text-xs font-semibold text-slate-200">Bukti Penghasilan / Slip Gaji</p>
+                </div>
+                <div class="bg-slate-900 p-4 rounded-lg border border-slate-800 text-center">
+                    <i class="fas fa-home text-sky-400 text-2xl mb-2"></i>
+                    <p class="text-xs font-semibold text-slate-200">PBB / Rek Listrik Rumah</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-16 bg-slate-900/60 border-t border-slate-800">
+        <div class="max-w-3xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <span class="text-sky-400 font-semibold text-xs tracking-wider uppercase mb-2 block">Pusat Informasi</span>
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+                <p class="text-slate-400 text-xs sm:text-sm">Jawaban cepat untuk pertanyaan seputar pinjaman jaminan BPKB Mobil di BFI Finance.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ: Siapa Kami & Apa Tugas Kami -->
+                <details class="group card-dark rounded-xl border border-slate-800 overflow-hidden transition" open>
+                    <summary class="flex justify-between items-center p-4 cursor-pointer select-none text-left">
+                        <span class="text-sm font-semibold text-white group-open:text-sky-400 transition">Siapa kami dan apa tugas kami sebagai agen mitra resmi BFI Finance?</span>
+                        <i class="fas fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition transform"></i>
+                    </summary>
+                    <div class="px-4 pb-4 pt-1 text-xs text-slate-300 leading-relaxed border-t border-slate-800/60">
+                        Kami adalah mitra resmi dari PT BFI Finance Indonesia Tbk. Tugas kami adalah mendampingi Anda mulai dari konsultasi awal, membantu pengecekan dan kelengkapan dokumen, memberikan opsi solusi jika ada kendala berkas, mengoordinasikan cek fisik kendaraan, hingga memastikan dana pinjaman cair utuh ke rekening Anda. Layanan pendampingan kami <strong>100% gratis tanpa biaya perantara</strong>.
+                    </div>
+                </details>
+
+                <!-- FAQ: Keamanan BPKB -->
+                <details class="group card-dark rounded-xl border border-slate-800 overflow-hidden transition">
+                    <summary class="flex justify-between items-center p-4 cursor-pointer select-none text-left">
+                        <span class="text-sm font-semibold text-white group-open:text-sky-400 transition">Apakah BPKB mobil saya dijamin aman selama masa pinjaman?</span>
+                        <i class="fas fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition transform"></i>
+                    </summary>
+                    <div class="px-4 pb-4 pt-1 text-xs text-slate-300 leading-relaxed border-t border-slate-800/60">
+                        Sangat aman. BPKB Anda tidak dipegang oleh agen, melainkan langsung disimpan secara resmi di ruang penyimpanan khusus (vault berkeamanan tinggi) kantor cabang BFI Finance yang berizin serta diawasi oleh OJK. BPKB dapat langsung diambil kembali begitu seluruh kewajiban angsuran telah lunas.
+                    </div>
+                </details>
+
+                <!-- FAQ: Mobil Masih Kredit / Take Over BPKB -->
+                <details class="group card-dark rounded-xl border border-slate-800 overflow-hidden transition">
+                    <summary class="flex justify-between items-center p-4 cursor-pointer select-none text-left">
+                        <span class="text-sm font-semibold text-white group-open:text-sky-400 transition">Apakah bisa mengajukan pinjaman jika BPKB mobil masih dalam masa kredit di leasing/bank lain (Take Over)?</span>
+                        <i class="fas fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition transform"></i>
+                    </summary>
+                    <div class="px-4 pb-4 pt-1 text-xs text-slate-300 leading-relaxed border-t border-slate-800/60">
+                        Bisa. Kami melayani program Take Over BPKB dari leasing atau bank lain, asalkan sisa cicilan sebelumnya lancar dan nilai taksasi mobil saat ini masih memiliki selisih lebih (*sisa pencairan*) yang dapat diterima oleh Anda. Tim kami akan membantu proses pelunasan di tempat lama hingga BPKB diterbitkan kembali ke BFI.
+                    </div>
+                </details>
+
+                <!-- FAQ 1 -->
+                <details class="group card-dark rounded-xl border border-slate-800 overflow-hidden transition">
+                    <summary class="flex justify-between items-center p-4 cursor-pointer select-none text-left">
+                        <span class="text-sm font-semibold text-white group-open:text-sky-400 transition">Berapa tahun minimal kendaraan mobil yang bisa dijaminkan?</span>
+                        <i class="fas fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition transform"></i>
+                    </summary>
+                    <div class="px-4 pb-4 pt-1 text-xs text-slate-300 leading-relaxed border-t border-slate-800/60">
+                        Umumnya mobil penumpang (passenger car) seperti Avanza, Innova, Xpander, dan sejenisnya mulai dari tahun 2011 ke atas. Untuk kendaraan niaga (Pick Up/Truk), ketentuan tahun bisa bervariasi sesuai regulasi unit cabang.
+                    </div>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="group card-dark rounded-xl border border-slate-800 overflow-hidden transition">
+                    <summary class="flex justify-between items-center p-4 cursor-pointer select-none text-left">
+                        <span class="text-sm font-semibold text-white group-open:text-sky-400 transition">Apakah mobil plat luar daerah bisa diproses?</span>
+                        <i class="fas fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition transform"></i>
+                    </summary>
+                    <div class="px-4 pb-4 pt-1 text-xs text-slate-300 leading-relaxed border-t border-slate-800/60">
+                        Bisa. Kami dapat memproses mobil berpelat daerah asalkan unit fisik kendaraan berada di domisili tempat Anda mengajukan saat ini untuk keperluan cek fisik dan gesek nomor rangka/mesin.
+                    </div>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="group card-dark rounded-xl border border-slate-800 overflow-hidden transition">
+                    <summary class="flex justify-between items-center p-4 cursor-pointer select-none text-left">
+                        <span class="text-sm font-semibold text-white group-open:text-sky-400 transition">Bagaimana jika pajak STNK mati atau telat bayar?</span>
+                        <i class="fas fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition transform"></i>
+                    </summary>
+                    <div class="px-4 pb-4 pt-1 text-xs text-slate-300 leading-relaxed border-t border-slate-800/60">
+                        Pajak mati tetap bisa kami bantu proses. Biaya perpanjangan pajak dapat dipotong langsung dari nilai pencairan dana, sehingga Anda tidak perlu mengeluarkan uang muka secara terpisah.
+                    </div>
+                </details>
+
+                <!-- FAQ 4 -->
+                <details class="group card-dark rounded-xl border border-slate-800 overflow-hidden transition">
+                    <summary class="flex justify-between items-center p-4 cursor-pointer select-none text-left">
+                        <span class="text-sm font-semibold text-white group-open:text-sky-400 transition">Berapa lama waktu proses hingga dana cair?</span>
+                        <i class="fas fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition transform"></i>
+                    </summary>
+                    <div class="px-4 pb-4 pt-1 text-xs text-slate-300 leading-relaxed border-t border-slate-800/60">
+                        Jika kelengkapan dokumen terpenuhi dan proses cek fisik kendaraan sudah dilakukan, dana dapat cair dalam kurun waktu 1 hingga 2 hari kerja langsung ke rekening bank pemohon.
+                    </div>
+                </details>
+
+                <!-- FAQ 5 -->
+                <details class="group card-dark rounded-xl border border-slate-800 overflow-hidden transition">
+                    <summary class="flex justify-between items-center p-4 cursor-pointer select-none text-left">
+                        <span class="text-sm font-semibold text-white group-open:text-sky-400 transition">Apakah BPKB mobil atas nama orang lain bisa diajukan?</span>
+                        <i class="fas fa-chevron-down text-xs text-slate-400 group-open:rotate-180 transition transform"></i>
+                    </summary>
+                    <div class="px-4 pb-4 pt-1 text-xs text-slate-300 leading-relaxed border-t border-slate-800/60">
+                        Bisa diajukan dengan menyertakan kuitansi jual-beli sah beserta kelengkapan identitas pemilik sebelumnya atau dapat dibantu dengan opsi program balik nama sekalian saat proses pencairan.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 py-8 bg-slate-950 text-center text-slate-500 text-xs">
+        <div class="max-w-6xl mx-auto px-4 space-y-3">
+            <p class="font-bold text-slate-400">Mitra Agen Resmi BFI Finance Indonesia</p>
+            <p class="max-w-xl mx-auto">Website ini dikelola secara independen oleh Mitra Agen Resmi untuk memudahkan pengajuan pinjaman jaminan BPKB Mobil melalui PT BFI Finance Indonesia Tbk. BFI Finance berizin dan diawasi oleh Otoritas Jasa Keuangan (OJK).</p>
+            <p>&copy; 2026 Agen Resmi BFI Finance. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP CTA WITH ANIMATION -->
+    <div class="fixed bottom-5 right-5 z-50 flex items-center">
+        <!-- Lingkaran Efek Gelombang / Radar Ping -->
+        <span class="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping"></span>
+        
+        <a href="https://wa.me/6281234567890?text=Halo%20Agen%20BFI,%20saya%20tertarik%20konsultasi%20BPKB%20Mobil" 
+           target="_blank" 
+           onclick="trackWaConversion()"
+           aria-label="Chat via WhatsApp"
+           class="relative bg-emerald-500 hover:bg-emerald-400 text-white rounded-full py-3 px-4 shadow-[0_0_20px_rgba(16,185,129,0.5)] flex items-center gap-2.5 hover:scale-105 transition transform duration-200">
+            <i class="fab fa-whatsapp text-2xl animate-bounce"></i>
+            <span class="font-bold text-xs sm:text-sm pr-1 tracking-wide">Chat Agen</span>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT: FORWARD FORM & SEPARATE CONVERSIONS -->
+    <script>
+        // 1. PRIMARY CONVERSION: Submit Form Pengajuan
+        function submitFormToWhatsApp(e) {
+            e.preventDefault();
+
+            const noAgen = "6281234567890"; // Ganti no WA Anda
+
+            const nama = document.getElementById('nama').value;
+            const wa = document.getElementById('nomorWA').value;
+            const merk = document.getElementById('merkMobil').value;
+            const tahun = document.getElementById('tahunMobil').value;
+            const nomorPlat = document.getElementById('nomorPlat').value;
+
+            // Kirim Sinyal Konversi Utama (Primary)
+            if (typeof gtag === 'function') {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-XXXXXXXXX/KODE_FORM_ID' // Ganti dengan ID Konversi Form
+                });
+            }
+
+            const pesan = `*PENGAJUAN SIMULASI BPKB MOBIL (WEB)*%0A` +
+                          `----------------------------------%0A` +
+                          `*Nama:* ${encodeURIComponent(nama)}%0A` +
+                          `*No. WhatsApp:* ${encodeURIComponent(wa)}%0A` +
+                          `*Unit Mobil:* ${encodeURIComponent(merk)} (${encodeURIComponent(tahun)})%0A` +
+                          `*Nomor Plat:* ${encodeURIComponent(nomorPlat.toUpperCase())}%0A` +
+                          `----------------------------------%0A` +
+                          `_Catatan: Data ini diajukan untuk proses simulasi/pengajuan resmi BFI Finance._`;
+
+            window.open(`https://wa.me/${noAgen}?text=${pesan}`, '_blank');
+        }
+
+        // 2. SECONDARY CONVERSION: Klik Tombol Floating WhatsApp
+        function trackWaConversion() {
+            // Kirim Sinyal Konversi Sekunder (Secondary)
+            if (typeof gtag === 'function') {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-XXXXXXXXX/KODE_WA_ID' // Ganti dengan ID Konversi WA
+                });
+            }
+        }
+    </script>
+</body>
+</html>
