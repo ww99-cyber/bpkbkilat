@@ -41,14 +41,14 @@
     </style>
 
     <!-- GOOGLE ADS TRACKING PLACEHOLDER -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18430333598"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18430333598"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'AW-18430333598');
     </script>
-  </head>
+</head>
 <body class="antialiased selection:bg-cyan-500 selection:text-white">
 
     <!-- TOP BAR / HEADER -->
@@ -130,7 +130,7 @@
                                 </div>
                                 <div>
                                     <label class="block text-sm font-semibold text-slate-200 mb-1.5">Tahun Kendaraan</label>
-                                    <input type="number" id="tahunMobil" min="2010" max="2026" required placeholder="2018" class="w-full input-dark rounded-xl px-4 py-3 text-base focus:ring-2 focus:ring-sky-400">
+                                    <input type="number" id="tahunMobil" min="2008" max="2026" required placeholder="2018" class="w-full input-dark rounded-xl px-4 py-3 text-base focus:ring-2 focus:ring-sky-400">
                                 </div>
                             </div>
 
@@ -336,7 +336,7 @@
 
                 <!-- Pilar 3: Memastikan Cair -->
                 <div class="card-dark p-6 sm:p-7 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition relative group">
-                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center mb-5 group-hover:scale-110 transition">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-emerald-400 fill-current" viewBox="0 0 24 24">
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                         </svg>
@@ -367,17 +367,43 @@
         </div>
     </section>
 
-    <!-- SYARAT DOKUMEN CEPAT -->
+    <!-- SYARAT DOKUMEN & KRITERIA KENDARAAN (DIPERBARUI) -->
     <section class="py-16">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-2xl sm:text-4xl font-bold text-white mb-8">Persyaratan Mudah & Praktis</h2>
+            <h2 class="text-2xl sm:text-4xl font-bold text-white mb-4">Persyaratan Mudah & Praktis</h2>
+            <p class="text-slate-400 text-sm sm:text-base mb-8">Kriteria unit kendaraan yang dapat diproses dan berkas dokumen yang dibutuhkan.</p>
+
+            <!-- Kriteria Tahun Kendaraan -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <div class="bg-gradient-to-r from-sky-950/60 to-slate-900 p-5 rounded-2xl border border-sky-800/60 text-left flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-2xl shrink-0">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold text-base sm:text-lg">Mobil Penumpang</h4>
+                        <p class="text-slate-300 text-sm">Sedan, MPV, SUV: <strong class="text-sky-400">Mulai Tahun 2008 ke atas</strong></p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-sky-950/60 to-slate-900 p-5 rounded-2xl border border-sky-800/60 text-left flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-2xl shrink-0">
+                        <i class="fas fa-truck-moving"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold text-base sm:text-lg">Truk & Kendaraan Niaga</h4>
+                        <p class="text-slate-300 text-sm">Pick Up, Truk, Blind Van: <strong class="text-sky-400">Mulai Tahun 2014 ke atas</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Berkas Dokumen -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-left">
                 <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 text-center">
                     <i class="fas fa-id-card text-sky-400 text-3xl mb-3"></i>
                     <p class="text-sm sm:text-base font-semibold text-slate-200">KTP & Kartu Keluarga</p>
                 </div>
                 <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 text-center">
-                    <i class="fas fa-car-side text-sky-400 text-3xl mb-3"></i>
+                    <i class="fas fa-file-invoice text-sky-400 text-3xl mb-3"></i>
                     <p class="text-sm sm:text-base font-semibold text-slate-200">STNK & BPKB Asli</p>
                 </div>
                 <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 text-center">
@@ -442,7 +468,7 @@
                         <i class="fas fa-chevron-down text-sm text-slate-400 group-open:rotate-180 transition transform"></i>
                     </summary>
                     <div class="px-5 pb-5 pt-2 text-sm sm:text-base text-slate-300 leading-relaxed border-t border-slate-800/60">
-                        Umumnya mobil penumpang (passenger car) seperti Avanza, Innova, Xpander, dan sejenisnya mulai dari tahun 2008 ke atas. Untuk kendaraan niaga (Pick Up/Truk), Mulai dari tahun 2014.
+                        Umumnya mobil penumpang (passenger car) seperti Avanza, Innova, Xpander, dan sejenisnya mulai dari tahun 2008 ke atas. Untuk kendaraan niaga (Pick Up/Truk), Mulai dari tahun 2014 ke atas.
                     </div>
                 </details>
 
@@ -520,7 +546,7 @@
         function submitFormToWhatsApp(e) {
             e.preventDefault();
 
-            const noAgen = "6285286535968"; // Ganti no WA Anda
+            const noAgen = "6285286535968";
 
             const nama = document.getElementById('nama').value;
             const wa = document.getElementById('nomorWA').value;
@@ -531,7 +557,7 @@
             // Kirim Sinyal Konversi Utama (Primary)
             if (typeof gtag === 'function') {
                 gtag('event', 'conversion', {
-                    'send_to': 'AW-18430333598/CPtiCKTtpe4cEJ6lotRE' // Ganti dengan ID Konversi Form
+                    'send_to': 'AW-18430333598/CPtiCKTtpe4cEJ6lotRE'
                 });
             }
 
@@ -552,7 +578,7 @@
             // Kirim Sinyal Konversi Sekunder (Secondary)
             if (typeof gtag === 'function') {
                 gtag('event', 'conversion', {
-                    'send_to': 'AW-18430333598/mekKCNf3s-4cEJ6lotRE' // Ganti dengan ID Konversi WA
+                    'send_to': 'AW-18430333598/mekKCNf3s-4cEJ6lotRE'
                 });
             }
         }
