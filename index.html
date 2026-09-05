@@ -61,11 +61,11 @@
 </head>
 <body class="antialiased selection:bg-amber-400 selection:text-slate-900">
 
-    <!-- HEADER BRANDING & QUICK CTA -->
+    <!-- HEADER BRANDING & QUICK CTA (LOGO DIPERBESAR DI HP) -->
     <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur sticky top-0 z-40">
-        <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="max-w-4xl mx-auto px-4 py-3 sm:py-3.5 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <img src="bpkbkilat-logo-web.png" alt="BPKB Kilat" class="h-9 sm:h-12 w-auto object-contain">
+                <img src="bpkbkilat-logo-web.png" alt="BPKB Kilat" class="h-11 sm:h-14 w-auto object-contain">
             </div>
             <!-- CTA WhatsApp 1: Header -->
             <a href="https://wa.me/6285286535968?text=Halo%20Agen%20BFI,%20saya%20ingin%20konsultasi%20pinjaman%20BPKB%20Mobil" 
@@ -178,7 +178,87 @@
         </div>
     </section>
 
-    <!-- 3. CONTOH SIMULASI PINJAMAN (AUTO-SLIDE 4 DETIK + DISCLAIMER) -->
+    <!-- 3. FORMULIR HITUNG ANGSURAN + AUTO-FORMAT NOMOR PLAT -->
+    <section id="hitung-form" class="py-10 px-4 bg-gradient-to-b from-[#070B12] via-slate-900 to-[#070B12]">
+        <div class="max-w-xl mx-auto card-panel p-5 sm:p-8 rounded-2xl sm:rounded-3xl shadow-2xl relative">
+            <div class="text-center mb-6">
+                <span class="text-sky-400 font-bold text-xs uppercase tracking-wider block mb-1">Simulasi Online</span>
+                <h2 class="text-xl sm:text-3xl font-extrabold text-white">Hitung Angsuran Anda</h2>
+                <p class="text-xs sm:text-sm text-slate-300 mt-1">Dapatkan estimasi pencairan dan simulasi angsuran secara gratis</p>
+            </div>
+
+            <form id="leadForm" onsubmit="submitFormToWhatsApp(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs sm:text-sm font-semibold text-slate-200 mb-1">Nama Lengkap Sesuai KTP</label>
+                    <input type="text" id="nama" required placeholder="Contoh: Budi Santoso" class="w-full input-field rounded-xl px-4 py-3 text-sm">
+                </div>
+
+                <div>
+                    <label class="block text-xs sm:text-sm font-semibold text-slate-200 mb-1">Nomor WhatsApp Aktif</label>
+                    <input type="tel" id="nomorWA" required placeholder="Contoh: 081234567890" class="w-full input-field rounded-xl px-4 py-3 text-sm">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-200 mb-1">Tipe Kendaraan</label>
+                        <input type="text" id="merkMobil" required placeholder="Contoh: Avanza / Innova / Pajero" class="w-full input-field rounded-xl px-4 py-3 text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs sm:text-sm font-semibold text-slate-200 mb-1">Tahun Kendaraan</label>
+                        <input type="number" id="tahunMobil" min="2008" max="2026" required placeholder="Contoh: 2018" class="w-full input-field rounded-xl px-4 py-3 text-sm">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs sm:text-sm font-semibold text-slate-200 mb-1">Nomor Plat Polisi</label>
+                    <input type="text" id="nomorPlat" required placeholder="Contoh: B 1234 ABC" maxlength="12" class="w-full input-field rounded-xl px-4 py-3 text-sm font-semibold tracking-wider uppercase">
+                </div>
+
+                <div class="flex items-start gap-2 bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-xs text-slate-400">
+                    <i class="fas fa-lock text-sky-400 mt-0.5"></i>
+                    <span>Data Anda bersifat rahasia dan hanya digunakan untuk proses verifikasi resmi di BFI Finance.</span>
+                </div>
+
+                <!-- Tombol Submit Form (Konversi Utama) -->
+                <button type="submit" class="w-full py-3.5 sm:py-4 px-4 bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 font-extrabold rounded-xl shadow-lg hover:shadow-yellow-500/20 transition flex justify-center items-center gap-2 text-sm sm:text-base uppercase tracking-wider">
+                    <span>Lihat Estimasi Pencairan</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="mt-6 pt-5 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-300">
+                <div class="flex items-center gap-2.5 bg-slate-950/70 border border-slate-800/90 p-3 rounded-xl">
+                    <div class="w-7 h-7 rounded-lg bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0">
+                        <i class="fas fa-bolt text-xs"></i>
+                    </div>
+                    <span><strong>Fast Approval:</strong> Opsi verifikasi kilat & mudah</span>
+                </div>
+
+                <div class="flex items-center gap-2.5 bg-slate-950/70 border border-slate-800/90 p-3 rounded-xl">
+                    <div class="w-7 h-7 rounded-lg bg-emerald-500/15 text-emerald-400 flex items-center justify-center shrink-0">
+                        <i class="fas fa-money-check-alt text-xs"></i>
+                    </div>
+                    <span><strong>Pencairan Utuh:</strong> Tanpa potongan biaya perantara</span>
+                </div>
+
+                <div class="flex items-center gap-2.5 bg-slate-950/70 border border-slate-800/90 p-3 rounded-xl">
+                    <div class="w-7 h-7 rounded-lg bg-sky-500/15 text-sky-400 flex items-center justify-center shrink-0">
+                        <i class="fas fa-truck-pickup text-xs"></i>
+                    </div>
+                    <span><strong>Semua Merek:</strong> Mobil, Pickup, dan Truk</span>
+                </div>
+
+                <div class="flex items-center gap-2.5 bg-slate-950/70 border border-slate-800/90 p-3 rounded-xl">
+                    <div class="w-7 h-7 rounded-lg bg-sky-500/15 text-sky-400 flex items-center justify-center shrink-0">
+                        <i class="fas fa-sync-alt text-xs"></i>
+                    </div>
+                    <span><strong>Take Over:</strong> Pindahan dari leasing lain dibantu</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CONTOH SIMULASI PINJAMAN (DIBAWAH FORM, AUTO-SLIDE 4 DETIK + DISCLAIMER) -->
     <section class="py-12 px-4 bg-[#090E17] border-t border-slate-800">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-8">
@@ -375,86 +455,6 @@
                 <p class="text-[12px] text-slate-400 flex items-center justify-center gap-1.5">
                     <i class="fas fa-arrows-alt-h text-sky-400"></i> Bergeser otomatis setiap 4 detik (Atau gunakan tombol panah / geser layar)
                 </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. FORMULIR HITUNG ANGSURAN + AUTO-FORMAT NOMOR PLAT -->
-    <section id="hitung-form" class="py-10 px-4 bg-gradient-to-b from-[#070B12] via-slate-900 to-[#070B12]">
-        <div class="max-w-xl mx-auto card-panel p-5 sm:p-8 rounded-2xl sm:rounded-3xl shadow-2xl relative">
-            <div class="text-center mb-6">
-                <span class="text-sky-400 font-bold text-xs uppercase tracking-wider block mb-1">Simulasi Online</span>
-                <h2 class="text-xl sm:text-3xl font-extrabold text-white">Hitung Angsuran Anda</h2>
-                <p class="text-xs sm:text-sm text-slate-300 mt-1">Dapatkan estimasi pencairan dan simulasi angsuran secara gratis</p>
-            </div>
-
-            <form id="leadForm" onsubmit="submitFormToWhatsApp(event)" class="space-y-4">
-                <div>
-                    <label class="block text-xs sm:text-sm font-semibold text-slate-200 mb-1">Nama Lengkap Sesuai KTP</label>
-                    <input type="text" id="nama" required placeholder="Contoh: Budi Santoso" class="w-full input-field rounded-xl px-4 py-3 text-sm">
-                </div>
-
-                <div>
-                    <label class="block text-xs sm:text-sm font-semibold text-slate-200 mb-1">Nomor WhatsApp Aktif</label>
-                    <input type="tel" id="nomorWA" required placeholder="Contoh: 081234567890" class="w-full input-field rounded-xl px-4 py-3 text-sm">
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <div>
-                        <label class="block text-xs sm:text-sm font-semibold text-slate-200 mb-1">Tipe Kendaraan</label>
-                        <input type="text" id="merkMobil" required placeholder="Contoh: Avanza / Innova / Pajero" class="w-full input-field rounded-xl px-4 py-3 text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs sm:text-sm font-semibold text-slate-200 mb-1">Tahun Kendaraan</label>
-                        <input type="number" id="tahunMobil" min="2008" max="2026" required placeholder="Contoh: 2018" class="w-full input-field rounded-xl px-4 py-3 text-sm">
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-xs sm:text-sm font-semibold text-slate-200 mb-1">Nomor Plat Polisi</label>
-                    <input type="text" id="nomorPlat" required placeholder="Contoh: B 1234 ABC" maxlength="12" class="w-full input-field rounded-xl px-4 py-3 text-sm font-semibold tracking-wider uppercase">
-                </div>
-
-                <div class="flex items-start gap-2 bg-slate-950/80 border border-slate-800 rounded-xl p-3 text-xs text-slate-400">
-                    <i class="fas fa-lock text-sky-400 mt-0.5"></i>
-                    <span>Data Anda bersifat rahasia dan hanya digunakan untuk proses verifikasi resmi di BFI Finance.</span>
-                </div>
-
-                <!-- Tombol Submit Form (Konversi Utama) -->
-                <button type="submit" class="w-full py-3.5 sm:py-4 px-4 bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 font-extrabold rounded-xl shadow-lg hover:shadow-yellow-500/20 transition flex justify-center items-center gap-2 text-sm sm:text-base uppercase tracking-wider">
-                    <span>Lihat Estimasi Pencairan</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-            </form>
-
-            <div class="mt-6 pt-5 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-300">
-                <div class="flex items-center gap-2.5 bg-slate-950/70 border border-slate-800/90 p-3 rounded-xl">
-                    <div class="w-7 h-7 rounded-lg bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0">
-                        <i class="fas fa-bolt text-xs"></i>
-                    </div>
-                    <span><strong>Fast Approval:</strong> Opsi verifikasi kilat & mudah</span>
-                </div>
-
-                <div class="flex items-center gap-2.5 bg-slate-950/70 border border-slate-800/90 p-3 rounded-xl">
-                    <div class="w-7 h-7 rounded-lg bg-emerald-500/15 text-emerald-400 flex items-center justify-center shrink-0">
-                        <i class="fas fa-money-check-alt text-xs"></i>
-                    </div>
-                    <span><strong>Pencairan Utuh:</strong> Tanpa potongan biaya perantara</span>
-                </div>
-
-                <div class="flex items-center gap-2.5 bg-slate-950/70 border border-slate-800/90 p-3 rounded-xl">
-                    <div class="w-7 h-7 rounded-lg bg-sky-500/15 text-sky-400 flex items-center justify-center shrink-0">
-                        <i class="fas fa-truck-pickup text-xs"></i>
-                    </div>
-                    <span><strong>Semua Merek:</strong> Mobil, Pickup, dan Truk</span>
-                </div>
-
-                <div class="flex items-center gap-2.5 bg-slate-950/70 border border-slate-800/90 p-3 rounded-xl">
-                    <div class="w-7 h-7 rounded-lg bg-sky-500/15 text-sky-400 flex items-center justify-center shrink-0">
-                        <i class="fas fa-sync-alt text-xs"></i>
-                    </div>
-                    <span><strong>Take Over:</strong> Pindahan dari leasing lain dibantu</span>
-                </div>
             </div>
         </div>
     </section>
